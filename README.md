@@ -1,13 +1,12 @@
 # 🚀 Portfolio Project
 
-This is a **personal portfolio project**, built to showcase my skills, projects, and experience as a developer. The main goal of this project is to demonstrate my abilities in modern web development, UI/UX design, and frontend/backend technologies.
+This is a **personal portfolio project**, built to showcase my skills, projects, and experience as a developer. The main goal of this project is to demonstrate my abilities in modern web development.
 
 ## 🛠️ Technologies Used
 
 - Framework: **Vite** / **Next.js**
 - Languages: **JavaScript** / **TypeScript**
-- Styling: **TailwindCSS**
-- Others: *(Framer Motion, GraphQL, Supabase, or any other relevant technologies)*
+- Styling: **Tailwind CSS**
 
 ## 🚀 Getting Started
 

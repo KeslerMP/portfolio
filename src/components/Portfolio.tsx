@@ -50,6 +50,27 @@ const Portfolio: React.FC<PortfolioProps> = ({ language }) => {
           link: "https://www.go3.com.br/",
           imgLink:"/images/go3.png"
         },
+        {
+          name: "Ricca",
+          description: "React, Sass, TypeScript, Vtex",
+          tech: "E-commerce com integração Vtex focado em produtos de beleza",
+          link: "https://www.mundoricca.com.br/",
+          imgLink: "/images/Ricca.png"
+        },
+        {
+          name: "Vertix",
+          description: "React, Sass, TypeScript, Vtex",
+          tech: "E-commerce com integração Vtex focado em utensilios e produtos de cabeleireiro",
+          link: "https://www.vertixprofessional.com.br/",
+          imgLink: "/images/Vertix.png"
+        },
+        {
+          name: "Bauducco",
+          description: "JavaScript, Css, Vtex",
+          tech: "E-commerce com integração Vtex focado em produtos alimentícios, na versão legacy da vtex",
+          link: "https://www.bauducco.com.br/",
+          imgLink: "/images/Bauducco.png"
+        }
       ]
     },
     en: {
@@ -92,6 +113,27 @@ const Portfolio: React.FC<PortfolioProps> = ({ language }) => {
           link: "https://www.go3.com.br/",
           imgLink: "/images/go3.png"
         },
+        {
+          name: "Ricca",
+          description: "React, Sass, TypeScript, Vtex",
+          tech: "E-commerce with Vtex integration focused on beauty products",
+          link: "https://www.mundoricca.com.br/",
+          imgLink: "/images/Ricca.png"
+        },
+        {
+          name: "Vertix",
+          description: "React, Sass, TypeScript, Vtex",
+          tech: "E-commerce with Vtex integration focused on hairdressing tools and products",
+          link: "https://www.vertixprofessional.com.br/",
+          imgLink: "/images/Vertix.png"
+        },
+        {
+          name: "Bauducco",
+          description: "JavaScript, Css, Vtex",
+          tech: "E-commerce with Vtex integration focused on food products, in the legacy version of Vtex",
+          link: "https://www.bauducco.com.br/",
+          imgLink: "/images/Bauducco.png"
+        }
       ]
     }
   };
@@ -99,6 +141,14 @@ const Portfolio: React.FC<PortfolioProps> = ({ language }) => {
   const visibleProjects = showAll 
     ? content[language].projects 
     : content[language].projects.slice(0, itemsPerPage);
+
+  const handleViewToggle = () => {
+    if (showAll) {
+      // Se estiver recolhendo, role suavemente para o topo da seção
+      document.getElementById('portfolio')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+    setShowAll(!showAll);
+  };
 
   return (
     <section id="portfolio" className="py-20 bg-gray-900 relative overflow-hidden">
@@ -152,7 +202,7 @@ const Portfolio: React.FC<PortfolioProps> = ({ language }) => {
         {content[language].projects.length > itemsPerPage && (
           <div className="text-center mt-10">
             <button
-              onClick={() => setShowAll(!showAll)}
+              onClick={handleViewToggle}
               className="inline-flex items-center space-x-2 px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-lg hover:from-blue-700 hover:to-purple-700 transition-all duration-300 transform hover:scale-105 shadow-xl hover:shadow-2xl"
             >
               {showAll ? content[language].viewLess : content[language].viewMore}

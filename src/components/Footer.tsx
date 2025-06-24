@@ -26,7 +26,7 @@ const Footer: React.FC<FooterProps> = ({ language }) => {
         <div className="text-center mb-8">
           <h3 className="text-2xl font-bold text-white mb-4">{content[language].contact}</h3>
           <a
-            href="mailto:kesler@example.com"
+            href="mailto:kesler.m.pereira@gmail.com"
             className="inline-block px-8 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-lg hover:from-blue-700 hover:to-purple-700 transition-all duration-300 transform hover:scale-105"
           >
             {content[language].email}
@@ -35,7 +35,7 @@ const Footer: React.FC<FooterProps> = ({ language }) => {
         
         <div className="flex justify-center space-x-6 mb-8">
           <a
-            href="https://linkedin.com/in/kesler-miranda"
+            href="https://www.linkedin.com/in/kesler-miranda-78749b231/"
             target="_blank"
             rel="noopener noreferrer"
             className="w-12 h-12 bg-gray-800 rounded-full flex items-center justify-center hover:bg-blue-600 transition-colors duration-300"
@@ -43,7 +43,7 @@ const Footer: React.FC<FooterProps> = ({ language }) => {
             <Linkedin className="text-white" size={20} />
           </a>
           <a
-            href="https://github.com/kesler-miranda"
+            href="https://github.com/KeslerMP"
             target="_blank"
             rel="noopener noreferrer"
             className="w-12 h-12 bg-gray-800 rounded-full flex items-center justify-center hover:bg-gray-700 transition-colors duration-300"

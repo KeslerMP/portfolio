@@ -22,8 +22,6 @@ const Skills: React.FC<SkillsProps> = ({ language }) => {
     { name: 'Next.js', level: 88, color: 'from-gray-600 to-gray-400' },
     { name: 'JavaScript', level: 95, color: 'from-yellow-500 to-yellow-400' },
     { name: 'HTML/CSS', level: 92, color: 'from-orange-500 to-red-500' },
-    { name: 'Git', level: 85, color: 'from-red-600 to-red-400' },
-    { name: 'MongoDB', level: 80, color: 'from-green-600 to-green-500' }
   ];
 
   return (
